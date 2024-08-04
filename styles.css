@@ -1,172 +1,173 @@
 /* General Styles */
 body {
   font-family: "IBM Plex Mono";
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-  }
-.hero-move{
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.hero-move {
   margin-top: 4rem;
-  font-size:3rem;
+  font-size: 3rem;
   color: #302f26;
 }
-.hero-expl{
+
+.hero-expl {
   background: linear-gradient(to bottom, rgba(87, 51, 4, 0.3), rgba(57, 1, 1, 0.3));
   padding: 10px;
   height: 80px;
   color: #f7f2d4;
   width: 90vw;
 }
-  /* Navbar */
-  nav {
-    background-color: #24292f;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .logo{
-    width: 40px;
-    height:40px;
-  }
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+/* Navbar */
+nav {
+  background-color: #24292f;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  }
+.logo {
+  width: 40px;
+  height: 40px;
+}
 
-  
-  nav li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #5c594f;
-    color: #fff;
-    border: none;
-    width:200px;
-    height: 40px;
-    border-radius: 0px;
-    cursor: pointer;
-  }
-  
-  /* Hero Image */
-  #hero {
-    position: relative;
-    height: 600px; /* Adjust height as needed */
-  }
-  
-  #hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-  
-  .hero-text {
-    display: flex;
-    justify-content:baseline;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    color: white; /* Adjust text color as needed */
-    z-index: 1;
-  }
-  
-  
-  /* Two Buttons */
-  #buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 30px 0;
-  }
-  
-  #buttons button {
-    /* Same styles as nav buttons */
-    background-color: #363f45;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-  }
-  
-  /* Text (h2) */
-  #text1 h2 {
-    text-align: center;
-    margin: 30px 0;
-  }
-  
-  /* Image Grid */
-  #image-grid .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  /* Text */
-  #text2 {
-    text-align: center;
-    margin: 30px 0;
-  }
-  
-  /* Final Buttons */
-  #final-buttons {
-    /* Same styles as previous buttons */
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 30px 0;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin:20px;
-  }
-  
-  .grid-item {
-    border: 1px solid #ccc;
-    padding:   
-   20px;
-  }
-  
-  .grid-img {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-  }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
 
-  .warewa{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width:600px;
-    height: 400px;
-    margin-top: 2%;
-    margin-left: 8%;
-  }
-  .offers{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  /* Footer */
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5c594f;
+  color: #fff;
+  border: none;
+  width: 200px;
+  height: 40px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+/* Hero Image */
+#hero {
+  position: relative;
+  height: 600px; /* Adjust height as needed */
+}
+
+#hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-text {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white; /* Adjust text color as needed */
+  z-index: 1;
+}
+
+/* Two Buttons */
+#buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+#buttons button {
+  background-color: #363f45;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* Text (h2) */
+#text1 h2 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* Image Grid */
+#image-grid .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Text */
+#text2 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* Final Buttons */
+#final-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.grid-img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.warewa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  height: 400px;
+  margin-top: 2%;
+  margin-left: 8%;
+}
+
+.offers {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Footer */
 footer {
   background-color: #24292f;
   color: #fff;
@@ -188,15 +189,26 @@ footer {
   border-top: 1px solid #363f45;
   padding-top: 10px;
 }
-.final{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #5c594f;
-  color: #fff;
-  border: none;
-  width:200px;
-  height: 40px;
-  border-radius: 0px;
-  cursor: pointer;
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav ul:first-of-type li:not(:first-child) {
+    display: none;
+  }
+
+  nav ul:last-of-type li:first-child {
+    display: none;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
 }
