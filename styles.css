@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f0f0f0;
+  overflow-x: hidden;
 }
 
 .hero-move {
@@ -190,19 +191,31 @@ footer {
   padding-top: 10px;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-  nav ul:first-of-type li:not(:first-child) {
-    display: none;
+/* For laptop screens */
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
   }
+}
 
-  nav ul:last-of-type li:first-child {
-    display: none;
-  }
+/* For screens with a max-width of 768px */
+@media (max-width: 768px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
-
 }
 
+/* Additional media query for small devices to ensure no overflow */
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Ensure grid items fit within the container */
+  .grid-item {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
