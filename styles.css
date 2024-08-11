@@ -218,4 +218,15 @@ footer {
     max-width: 100%;
     box-sizing: border-box;
   }
+
+  /* Hide everything except logo and cart */
+  nav ul,
+  nav button {
+    display: none;
+  }
+
+  /* Ensure the logo and cart are properly aligned */
+  nav {
+    justify-content: space-between;
+  }
 }
